@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanshi Ghoghari | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(-45deg, #000000, #0d1b2a, #1b263b, #000814);
+            background-size: 400% 400%;
+            animation: gradientMove 12s ease infinite;
+            color: #f1f5f9;
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .navbar {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        footer {
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-section {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-container {
+            position: relative;
+            width: 360px;
+            height: 360px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 🔵 Pulsing Glow Ring */
+        .glow-ring {
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%);
+            animation: pulseGlow 3s infinite ease-in-out;
+        }
+
+        @keyframes pulseGlow {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(0.95);
+                opacity: 0.7;
+            }
+        }
+
+        /* 🔄 Rotating Arc */
+        .rotating-arc {
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            border: 6px solid transparent;
+            border-top: 6px solid #3b82f6;
+            border-right: 6px solid #60a5fa;
+            animation: rotateArc 6s linear infinite;
+        }
+
+        @keyframes rotateArc {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* 💎 Glass Morphic Circle */
+        .profile-glass {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        /* 🖼 Image */
+        .profile-img {
+            width: 110%;
+            height: 110%;
+            border-radius: 50%;
+            object-fit: cover;
+            /* display: block; */
+        }
+
+        .tagline {
+            letter-spacing: 2px;
+            font-size: 14px;
+            color: #60a5fa;
+        }
+
+        .social-btn {
+            padding: 10px 28px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .github-btn {
+            background: #111;
+            color: #fff;
+            border: 1px solid #333;
+        }
+
+        .github-btn:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .linkedin-btn {
+            background: #0A66C2;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="index.html">HEMANSHI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active text-info" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-fill" style="margin-top:100px;">
+
+        <section class="container hero-section">
+            <div class="row align-items-center w-100 g-0">
+
+                <!-- Left -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="fw-bold mb-4">
+                        Hello, I'm <span class="text-info">Hemanshi Ghoghari</span>
+                    </h1>
+                    <p class="tagline">FULL STACK DEVELOPER</p>
+
+                    <p class="mb-4">
+                        I build modern, responsive and high-performance web applications
+                        using Python, MySQL and front-end technologies.
+                    </p>
+
+                    <div>
+                        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"
+                            class="btn social-btn github-btn me-3">
+                            GitHub
+                        </a>
+
+                        <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank"
+                            class="btn social-btn linkedin-btn">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-6 d-flex justify-content-center mt-4 mt-lg-0">
+                    <div class="profile-container">
+                        <div class="glow-ring"></div>
+                        <div class="rotating-arc"></div>
+
+                        <div class="profile-glass">
+                            <img src="profile_pic.png" alt="Profile" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-3 bg-black text-secondary mt-auto">
+        © 2026 Hemanshi Ghoghari | Full Stack Developer
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
