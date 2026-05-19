@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hemanshi Ghoghari - Graphic Designer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">HEMANSHI</a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <span class="page-label">Portfolio</span>
+            <h1 class="page-title">My Recent Work</h1>
+            <p class="page-subtitle">Showcasing my design projects and creative work</p>
+        </div>
+    </section>
+
+    <!-- ==================== FILTER BUTTONS ==================== -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="logo">Logo Design</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="print">Print Design</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO GRID ==================== -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid-full">
+                
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-card" data-category="logo branding">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-vector-square"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Tax Consultant Logo</h3>
+                                <p>Logo Design & Branding</p>
+                                <a href="#" class="view-btn"><i class="fas fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Logo Design</span>
+                        <h4>Tax Consultant Logo</h4>
+                        <p>Professional logo design for a chartered accountant</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-card" data-category="social">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder instagram">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>GST Posts Package</h3>
+                                <p>Social Media Design</p>
+                                <a href="#" class="view-btn"><i class="fas fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Social Media</span>
+                        <h4>GST Posts Package</h4>
+                        <p>Complete social media package for tax consultant</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-card" data-category="branding">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Property Brand Identity</h3>
+                                <p>Business Branding</p>
+                                <a href="#" class="view-btn"><i class="fas fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Branding</span>
+                        <h4>Property Brand Identity</h4>
+                        <p>Complete branding for real estate company</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-card" data-category="print">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Business Card Design</h3>
+                                <p>Print Design</p>
+                                <a href="#" class="view-btn"><i class="fas fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Print Design</span>
+                        <h4>Business Card Design</h4>
+                        <p>Premium business cards for corporate client</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-card" data-category="social">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder instagram">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Restaurant Instagram</h3>
+                                <p>Social Media Design</p>
+                                <a href="#" class="view-btn"><i class="fas fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Social Media</span>
+                        <h4>Restaurant Instagram</h4>
+                        <p>Instagram feed design for restaurant chain</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-card" data-category="logo">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Salon Logo</h3>
+                                <p>Logo Design</p>
+                                <a href="#" class="view-btn"><i class="fas fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Logo Design</span>
+                        <h4>Salon Logo</h4>
+                        <p>Elegant logo for beauty salon</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 7 -->
+                <div class="portfolio-card" data-category="branding">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Restaurant Branding</h3>
+                                <p>Complete Branding</p>
+                                <a href="#" class="view-btn"><i class="fas fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Branding</span>
+                        <h4>Restaurant Branding</h4>
+                        <p>Full branding package for restaurant</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 8 -->
+                <div class="portfolio-card" data-category="print">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Flyer Design</h3>
+                                <p>Print Design</p>
+                                <a href="#" class="view-btn"><i class="fas fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Print Design</span>
+                        <h4>Marketing Flyer</h4>
+                        <p>Promotional flyer for event</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 9 -->
+                <div class="portfolio-card" data-category="social">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder instagram">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Educational Posts</h3>
+                                <p>Social Media Design</p>
+                                <a href="#" class="view-btn"><i class="fas fa-eye"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Social Media</span>
+                        <h4>Educational Content</h4>
+                        <p>GST & Tax related posts for CA firm</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATS SECTION ==================== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid" data-aos="fade-up">
+                <div class="stat-box">
+                    <i class="fas fa-project-diagram"></i>
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-smile"></i>
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-clock"></i>
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-award"></i>
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Awards Won</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Like What You See?</h2>
+                <p>Let's work together on your next project. Get in touch today!</p>
+                <a href="contact.html" class="btn btn-primary">Start a Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">HEMANSHI</a>
+                        <p class="footer-tagline">Graphic Designer & Branding Specialist</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-services">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Logo Design</a></li>
+                            <li><a href="#">Social Media</a></li>
+                            <li><a href="#">Business Branding</a></li>
+                            <li><a href="#">GST Branding</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:+919999999999"><i class="fas fa-phone"></i> +91 99999 99999</a></li>
+                            <li><a href="mailto:hemanshi@example.com"><i class="fas fa-envelope"></i> hemanshi@example.com</a></li>
+                            <li><a href="https://wa.me/919999999999" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://instagram.com/yourhandle" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/919999999999" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://facebook.com/yourhandle" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourhandle" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Hemanshi Ghoghari. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -4,228 +4,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemanshi Ghoghari | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            background: linear-gradient(-45deg, #000000, #0d1b2a, #1b263b, #000814);
-            background-size: 400% 400%;
-            animation: gradientMove 12s ease infinite;
-            color: #f1f5f9;
-        }
-
-        @keyframes gradientMove {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        .navbar {
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
-        }
-
-        footer {
-            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.6);
-        }
-
-        .hero-section {
-            min-height: 75vh;
-            display: flex;
-            align-items: center;
-        }
-
-        .profile-container {
-            position: relative;
-            width: 360px;
-            height: 360px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* 🔵 Pulsing Glow Ring */
-        .glow-ring {
-            position: absolute;
-            width: 320px;
-            height: 320px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%);
-            animation: pulseGlow 3s infinite ease-in-out;
-        }
-
-        @keyframes pulseGlow {
-            0% {
-                transform: scale(0.95);
-                opacity: 0.7;
-            }
-
-            50% {
-                transform: scale(1.05);
-                opacity: 1;
-            }
-
-            100% {
-                transform: scale(0.95);
-                opacity: 0.7;
-            }
-        }
-
-        /* 🔄 Rotating Arc */
-        .rotating-arc {
-            position: absolute;
-            width: 340px;
-            height: 340px;
-            border-radius: 50%;
-            border: 6px solid transparent;
-            border-top: 6px solid #3b82f6;
-            border-right: 6px solid #60a5fa;
-            animation: rotateArc 6s linear infinite;
-        }
-
-        @keyframes rotateArc {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* 💎 Glass Morphic Circle */
-        .profile-glass {
-            width: 260px;
-            height: 260px;
-            border-radius: 50%;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(12px);
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        /* 🖼 Image */
-        .profile-img {
-            width: 110%;
-            height: 110%;
-            border-radius: 50%;
-            object-fit: cover;
-            /* display: block; */
-        }
-
-        .tagline {
-            letter-spacing: 2px;
-            font-size: 14px;
-            color: #60a5fa;
-        }
-
-        .social-btn {
-            padding: 10px 28px;
-            border-radius: 30px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .github-btn {
-            background: #111;
-            color: #fff;
-            border: 1px solid #333;
-        }
-
-        .github-btn:hover {
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-        }
-
-        .linkedin-btn {
-            background: #0A66C2;
-            color: #fff;
-        }
-    </style>
+    <title>Hemanshi Ghoghari | Graphic Designer & Branding Specialist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body>
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-info" href="index.html">HEMANSHI</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active text-info" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">HEMANSHI</a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <main class="flex-fill" style="margin-top:100px;">
-
-        <section class="container hero-section">
-            <div class="row align-items-center w-100 g-0">
-
-                <!-- Left -->
-                <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="fw-bold mb-4">
-                        Hello, I'm <span class="text-info">Hemanshi Ghoghari</span>
-                    </h1>
-                    <p class="tagline">FULL STACK DEVELOPER</p>
-
-                    <p class="mb-4">
-                        I build modern, responsive and high-performance web applications
-                        using Python, MySQL and front-end technologies.
-                    </p>
-
-                    <div>
-                        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"
-                            class="btn social-btn github-btn me-3">
-                            GitHub
-                        </a>
-
-                        <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank"
-                            class="btn social-btn linkedin-btn">
-                            LinkedIn
-                        </a>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <span class="hero-label">Portfolio</span>
+                <h1 class="hero-title">Hemanshi Ghoghari</h1>
+                <h2 class="hero-subtitle">Graphic Designer & Branding Specialist</h2>
+                <p class="hero-tagline">Professional Social Media, Branding & Business Design Solutions</p>
+                
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+                    <a href="about.html" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years</span>
                     </div>
                 </div>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="floating-card card-1">
+                    <div class="mockup-content">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="mockup-content">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="mockup-content">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Right -->
-                <div class="col-lg-6 d-flex justify-content-center mt-4 mt-lg-0">
-                    <div class="profile-container">
-                        <div class="glow-ring"></div>
-                        <div class="rotating-arc"></div>
+    <!-- ==================== SERVICES PREVIEW ==================== -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Services I Offer</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Logo Design</h3>
+                    <p>Unique, memorable logos that represent your brand identity perfectly.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3>Social Media Design</h3>
+                    <p>Engaging posts designed to capture attention and drive engagement.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>Legal & GST Branding</h3>
+                    <p>Professional designs for legal firms, CA's and tax consultants.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Business Card Design</h3>
+                    <p>Professional business cards that leave a lasting impression.</p>
+                </div>
+            </div>
+            
+            <div class="services-cta" data-aos="fade-up">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
 
-                        <div class="profile-glass">
-                            <img src="profile_pic.png" alt="Profile" class="profile-img">
+    <!-- ==================== PORTFOLIO PREVIEW ==================== -->
+    <section class="portfolio-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Recent Projects</h2>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item item-large" data-aos="fade-up" data-delay="100">
+                    <div class="portfolio-mockup">
+                        <div class="mockup-screen">
+                            <span class="mockup-label">GST Registration</span>
                         </div>
                     </div>
+                    <div class="portfolio-overlay">
+                        <h4>GST Posts</h4>
+                        <p>Tax consultant branding</p>
+                    </div>
                 </div>
-
+                
+                <div class="portfolio-item" data-aos="fade-up" data-delay="200">
+                    <div class="portfolio-mockup">
+                        <div class="mockup-screen">
+                            <span class="mockup-label">Property</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Property Design</h4>
+                        <p>Real estate branding</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="fade-up" data-delay="300">
+                    <div class="portfolio-mockup">
+                        <div class="mockup-screen">
+                            <span class="mockup-label">Logo</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Logo Design</h4>
+                        <p>Brand identity</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item item-wide" data-aos="fade-up" data-delay="400">
+                    <div class="portfolio-mockup">
+                        <div class="mockup-screen">
+                            <span class="mockup-label">Instagram</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Social Media</h4>
+                        <p>Instagram branding</p>
+                    </div>
+                </div>
             </div>
-        </section>
+            
+            <div class="portfolio-cta" data-aos="fade-up">
+                <a href="blog.html" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Build Your Brand?</h2>
+                <p>Let's create something amazing together. Get in touch for a free consultation.</p>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </section>
 
-    <footer class="text-center py-3 bg-black text-secondary mt-auto">
-        © 2026 Hemanshi Ghoghari | Full Stack Developer
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">HEMANSHI</a>
+                        <p class="footer-tagline">Graphic Designer & Branding Specialist</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-services">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Logo Design</a></li>
+                            <li><a href="#">Social Media</a></li>
+                            <li><a href="#">Business Branding</a></li>
+                            <li><a href="#">GST Branding</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:+919999999999"><i class="fas fa-phone"></i> +91 99999 99999</a></li>
+                            <li><a href="mailto:hemanshi@example.com"><i class="fas fa-envelope"></i> hemanshi@example.com</a></li>
+                            <li><a href="https://wa.me/919999999999" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://instagram.com/yourhandle" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/919999999999" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://facebook.com/yourhandle" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourhandle" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Hemanshi Ghoghari. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
